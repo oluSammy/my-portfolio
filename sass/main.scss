@@ -1,6 +1,8 @@
-body {
-    background-color: orangered;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
+@import './base/base';
+
+@import './abstracts/variable';
+@import './abstracts/animation';
+
+@import './layout/navigation';
+
+@import './components/hero.scss';
