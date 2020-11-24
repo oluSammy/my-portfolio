@@ -78,5 +78,34 @@
 .sticky {
     background-color: $color-black;
     opacity: .9;
-    box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 1);
+}
+
+.top-btn {
+    background-color: $color-black;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 999;
+    transition: all .6s;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, .5);
+
+    & svg {
+        height: 3rem;
+        width: 3rem;
+        fill: $color-white;
+    }
+
+    &:hover {
+        transform: scale(1.06);
+        box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, .9);
+    }
 }

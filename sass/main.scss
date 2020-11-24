@@ -1,8 +1,18 @@
+//base
 @import './base/base';
+@import './base/typography';
 
+//abstracts
 @import './abstracts/variable';
 @import './abstracts/animation';
 
+//layout
 @import './layout/navigation';
+@import './layout/about';
+@import './layout/dev';
 
+//components
 @import './components/hero.scss';
+
+//home
+@import './pages/home.scss';

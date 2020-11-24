@@ -1,0 +1,47 @@
+.dev {
+    // width: 100%;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        margin-left: 3rem;
+        fill: $dark-dark;
+    }
+
+    &__subtitle {
+        font-size: 2.1rem;
+        color: $text-color-dark;
+        font-family: 'Sofia', cursive;
+        text-align: center;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, (2rem, 13rem));
+        grid-gap: 2rem;
+    }
+
+    &__icon-box {
+        background-color: orangered;
+        // width: 24rem;
+        // margin-right: .4rem;
+    }
+
+    &__figure {
+
+    }
+
+    &__tool-icon {
+
+    }
+
+    &__icon-title {
+
+    }
+}
