@@ -18,12 +18,12 @@
 
     &__img {
         height: 100%;
-        animation: avatar 2s cubic-bezier(0.42, 0, 1, 1);
-        // animation: name duration timing-function delay iteration-count direction fill-mode;
         width: 100%;
         object-fit: cover;
         display: block;
         border-radius: 50%;
+        animation: avatar 2s cubic-bezier(0.42, 0, 1, 1);
+        // animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 
     &__title {

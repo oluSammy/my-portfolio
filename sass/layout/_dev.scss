@@ -23,25 +23,36 @@
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, (2rem, 13rem));
-        grid-gap: 2rem;
+        padding: 5vw;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-row-gap: 3rem;
+        grid-column-gap: 3rem;
     }
 
     &__icon-box {
-        background-color: orangered;
-        // width: 24rem;
-        // margin-right: .4rem;
+        border-radius: 1rem;
+        padding: .5rem;
     }
 
     &__figure {
-
+        width: 50%;
+        height: 5rem;
+        margin: 0 auto;
     }
 
     &__tool-icon {
-
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     &__icon-title {
-
+        font-size: 1.3rem;
+        width: min-content;
+        margin: 0 auto;
+        color: $text-color-light;
+        font-weight: 700;
+        white-space: nowrap;
     }
 }

@@ -21,6 +21,7 @@ body {
 .section-heading {
   font-size: 4rem;
   text-shadow: 2px 2px 5px #969696;
+  letter-spacing: 2px;
 }
 
 @keyframes bounce {
@@ -250,12 +251,87 @@ body {
 }
 .dev__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 2rem, 13rem);
-  grid-gap: 2rem;
+  padding: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
 }
 .dev__icon-box {
-  background-color: orangered;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
+.dev__figure {
+  width: 50%;
+  height: 5rem;
+  margin: 0 auto;
+}
+.dev__tool-icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.dev__icon-title {
+  font-size: 1.3rem;
+  width: min-content;
+  margin: 0 auto;
+  color: #737373;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.skills__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.skills__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 3rem;
+}
+.skills__box {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.skills__box-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262526;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.skills__heading-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #fff;
+}
+.skills h4 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.skills__box-text {
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.3rem;
+}
+.skills__box-text:nth-child(2n) {
+  background-color: #eee;
+}
+
 .banner {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.548), #141314cb), url(../../assets/images/banner-8.jpg);
@@ -273,11 +349,11 @@ body {
 }
 .banner__img {
   height: 100%;
-  animation: avatar 2s cubic-bezier(0.42, 0, 1, 1);
   width: 100%;
   object-fit: cover;
   display: block;
   border-radius: 50%;
+  animation: avatar 2s cubic-bezier(0.42, 0, 1, 1);
 }
 .banner__title {
   color: #fff;
@@ -645,6 +721,10 @@ body {
 
 .dev {
   padding: 10rem 6rem;
+}
+
+.skills {
+  padding: 7rem 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
