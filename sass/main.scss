@@ -11,9 +11,11 @@
 @import './layout/about';
 @import './layout/dev';
 @import './layout/skills';
+@import './layout/project';
 
 //components
 @import './components/hero.scss';
+@import './components/tab';
 
 //home
 @import './pages/home.scss';

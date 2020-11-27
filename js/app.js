@@ -1,3 +1,4 @@
+//scroll event listener
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".nav");
     const scroll = document.querySelector(".banner__scroll");
@@ -14,4 +15,4 @@ window.addEventListener("scroll", () => {
         top.style.opacity = '0';
         top.style.visibility = 'hidden';
     }
-})
+});

@@ -15,7 +15,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   font-family: "EB Garamond", serif;
-  position: relative;
 }
 
 .section-heading {
@@ -330,6 +329,18 @@ body {
 }
 .skills__box-text:nth-child(2n) {
   background-color: #eee;
+}
+
+.projects__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.projects__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1.4rem;
 }
 
 .banner {
@@ -715,6 +726,49 @@ body {
     transform: translateY(0px);
   }
 }
+.tab {
+  width: 100%;
+}
+.tab__nav {
+  display: flex;
+  align-items: center;
+}
+.tab input {
+  display: none;
+}
+.tab input:checked + label {
+  box-shadow: inset 0 -0.2rem #292929;
+}
+.tab label {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #292929;
+  padding: 1rem 10vw;
+  transition: all 0.2s ease;
+  font-size: 2rem;
+}
+.tab label:hover {
+  background-color: #f7f7f7;
+}
+.tab__panel {
+  display: flex;
+  overflow: hidden;
+}
+.tab__content {
+  margin-top: 3rem;
+  flex: 0 0 100%;
+  transition: all 0.5s ease-out;
+}
+
+.tab input:nth-of-type(2):checked ~ .tab__panel .tab__content {
+  transform: translateX(-100%);
+}
+
+.tab input:nth-of-type(3):checked ~ .tab__panel .tab__content {
+  transform: translateX(-200%);
+}
+
 .about {
   padding: 10rem 8rem;
 }
@@ -725,6 +779,10 @@ body {
 
 .skills {
   padding: 7rem 5rem;
+}
+
+.projects {
+  padding: 9rem 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

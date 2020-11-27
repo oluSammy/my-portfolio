@@ -56,7 +56,7 @@
                     <svg class="nav__link-icon">
                         <use xlink:href="./assets/icons/sprite.svg#icon-cheveron-down"></use>
                     </svg>
-                    <a href="#" class="nav__link-text">Portfolio</a>
+                    <a href="#projects" class="nav__link-text">Portfolio</a>
                 </li>
                 <button class="nav__btn">Contact</button>
             </ul>
@@ -97,6 +97,7 @@
         </a>
     </header>
     <main id="main">
+        <!-- About Section -->
         <section class="about" id="about">
             <div class="about__heading">
                 <h2 class="about__title section-heading">About</h2>
@@ -119,10 +120,11 @@
                 </p>
             </div>
             <div class="about__btn-container">
-                <a href="#dev" class="about__btn">Portfolio</a>
+                <a href="#projects" class="about__btn">Portfolio</a>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section class="skills" id="skills">
             <div class="skills__heading">
                 <h2 class="skills__title section-heading">Skills & Expertise</h2>
@@ -176,6 +178,39 @@
             </div>
         </section>
 
+        <!-- Project Section -->
+        <section class="projects" id="projects">
+            <div class="projects__header">
+                <h2 class="projects__title section-heading">My Work</h2>
+                <svg class="projects__icon">
+                    <use xlink:href="./assets/icons/sprite.svg#icon-cheveron-down"></use>
+                </svg>
+            </div>
+            <div class="tab">
+                <input type="radio" id="react" name="tab" checked>
+                <label for="react">React</label>
+
+                <input type="radio" id="vanilla" name="tab">
+                <label for="vanilla">Vanilla JS</label>
+
+                <input type="radio" id="css" name="tab">
+                <label for="css">CSS</label>
+
+                <div class="tab__panel">
+                    <div class="tab__content">
+                        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, soluta?
+                    </div>
+                    <div class="tab__content">
+                        2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, soluta?
+                    </div>
+                    <div class="tab__content">
+                        3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, soluta?
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dev-Tools Section -->
         <section class="dev" id="dev">
             <div class="dev__heading">
                 <h2 class="dev__title section-heading">Languages / Libraries / Dev Tools</h2>
