@@ -98,7 +98,7 @@ body {
 }
 .nav__title {
   margin-right: auto;
-  font-family: "Pacifico", cursive;
+  font-family: "Sofia", cursive;
   font-weight: 300;
   font-size: 2.6rem;
   letter-spacing: 1px;
@@ -133,7 +133,7 @@ body {
   margin-right: 0.4rem;
 }
 .nav__btn {
-  padding: 0.8rem 2.5rem;
+  padding: 0.4rem 2.5rem;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
@@ -142,6 +142,7 @@ body {
   font-weight: 700;
   transition: all 0.2s;
   font-size: 1.6rem;
+  text-decoration: none;
 }
 .nav__btn:hover {
   background-color: #fff;
@@ -158,8 +159,8 @@ body {
 
 .top-btn {
   background-color: #000000;
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,6 +344,106 @@ body {
   margin-left: 1.4rem;
 }
 
+.footer {
+  min-height: 65vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), #0c0a0cb7), url(../../assets/images/banner-8.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__heading {
+  font-size: 2.2rem;
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 3rem 0 3rem 0;
+}
+.footer__link-item {
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  transition: all 0.2s;
+}
+.footer__link-item a {
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: 2px;
+}
+.footer__link-item:hover {
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+.footer__socials {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.footer__socials a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.footer__socials a span {
+  margin-left: -1.5rem;
+  font-size: 1.2rem;
+}
+.footer__socials a span:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  fill: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.footer__icon:hover {
+  fill: #fff;
+  background-color: #000000;
+  transform: scale(1.13);
+}
+.footer__icon:hover + span {
+  text-decoration: underline;
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.footer__mail, .footer__phone {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.footer__mail a, .footer__phone a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.footer__mail a:hover, .footer__phone a:hover {
+  text-decoration: underline;
+}
+.footer__contact-icon {
+  width: 2rem;
+  height: 3rem;
+  fill: #fff;
+  margin-right: 1rem;
+}
+
 .banner {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.548), #141314cb), url(../../assets/images/banner-8.jpg);
@@ -368,28 +469,41 @@ body {
 }
 .banner__title {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 3rem;
   animation: slideUp 4s cubic-bezier(0.42, 0, 1, 1);
+  margin-top: 4rem;
 }
 .banner__socials {
-  margin-top: 2rem;
-  animation: scaleSocials 6.3s cubic-bezier(0, 1.08, 0.91, 0.57);
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+.banner__socials a {
+  display: block;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner__socials p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-left: -0.5rem;
+}
+.banner__socials p:hover {
+  text-decoration: underline;
 }
 .banner__icon {
   fill: #fff;
-  height: 4rem;
-  width: 4rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
-  transition: all 0.1s;
-  padding: 0.7rem;
-  border-radius: 50%;
-}
-.banner__icon:not(:last-child) {
-  margin-right: 1.5rem;
+  transition: all 0.4s;
+  margin-right: 5rem;
 }
 .banner__icon:hover {
-  transform: scale(1.2);
   background-color: #000000;
+  transform: scale(1.2);
 }
 .banner__scroll {
   display: flex;
@@ -401,12 +515,12 @@ body {
 }
 .banner__scroll--icon {
   fill: #fff;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
 }
 .banner__scroll--text {
   color: #fff;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 .banner__scroll:hover .banner__scroll--text {

@@ -13,7 +13,8 @@
 
     &__title {
         margin-right: auto;
-        font-family: 'Pacifico', cursive;
+        // font-family: 'Pacifico', cursive;
+        font-family: 'Sofia', cursive;
         font-weight: 300;
         font-size: 2.6rem;
         letter-spacing: 1px;
@@ -55,7 +56,7 @@
     }
 
     &__btn {
-        padding: .8rem 2.5rem;
+        padding: .4rem 2.5rem;
         background-color: transparent;
         color: $color-white;
         border: 1px solid $color-white;
@@ -64,6 +65,7 @@
         font-weight: 700;
         transition: all .2s;
         font-size: 1.6rem;
+        text-decoration: none;
 
 
         &:hover {
@@ -83,8 +85,8 @@
 
 .top-btn {
     background-color: $color-black;
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
