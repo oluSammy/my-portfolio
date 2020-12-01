@@ -6,6 +6,10 @@
     height: 50rem;
     border-radius: 3rem;
 
+    @media only screen and (max-width: 768px){
+        // height: 64rem;
+    }
+
     &__side {
         color: #fff;
         font-size: 2rem;
@@ -86,6 +90,10 @@
     &__list {
         margin: 8% 0 8% 0;
         list-style: none;
+
+        @media only screen and (max-width: 768px){
+            margin: 5% 0 3% 0;
+        }
     }
 
     &__list-item {
@@ -160,5 +168,36 @@
         @media only screen and (max-width: 482px){
             margin-top: -45rem;
         }
+    }
+
+    &__links {
+        display: none;
+
+        @media only screen and (max-width: 768px){
+            display: flex;
+            align-items: c;
+            justify-content: space-around;
+            margin-bottom: .8rem;
+        }
+
+        & a {
+            color: $color-white;
+            font-size: 1.3rem;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__demo &__github{
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        fill: $color-white;
     }
 }
