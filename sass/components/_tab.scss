@@ -58,6 +58,11 @@
             font-size: 1.6rem;
         }
 
+        @media only screen and (max-width: 330px){
+            font-size: 1.6rem;
+            padding: .8rem 10.5vw;
+        }
+
         &:hover {
             background-color: $color-grey-light;
         }
@@ -70,6 +75,7 @@
 
     &__content {
         margin-top: 3rem;
+        margin-bottom: 6rem;
         flex: 0 0 100%;
         transition: all .5s ease-out;
 
@@ -90,7 +96,27 @@
         }
 
         @media only screen and (max-width: 482px){
-            padding: 0 30%;
+            grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+            padding: 0 24%;
+        }
+
+        @media only screen and (max-width: 425px){
+            grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+            padding: 0 18% 0 13%;
+        }
+
+        @media only screen and (max-width: 365px){
+            padding: 0 18% 0 11%;
+        }
+
+        @media only screen and (max-width: 353px){
+            grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+            padding: 0 18% 0 9%;
+        }
+
+        @media only screen and (max-width: 326px){
+            grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+            padding: 0 18% 0 7%;
         }
     }
 }

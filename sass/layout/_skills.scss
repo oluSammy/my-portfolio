@@ -22,6 +22,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
         grid-gap: 3rem;
+
+        @media only screen and (max-width: 332px){
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-gap: 1.7rem;
+        }
     }
 
     &__box {
@@ -43,7 +48,8 @@
         }
 
         @media only screen and (max-width: 332px){
-            // width: 90%;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(200rem, 1fr));
         }
     }
 
