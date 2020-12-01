@@ -11,24 +11,65 @@
     background-color: transparent ;
     transition: all .5s;
 
+    @media only screen and (max-width: 724px){
+        padding: 1rem 3rem;
+    }
+
+    @media only screen and (max-width: 432px){
+        padding: 1rem .3rem;
+    }
+
+    @media only screen and (max-width: 432px){
+        font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 394px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     &__title {
         margin-right: auto;
-        // font-family: 'Pacifico', cursive;
         font-family: 'Sofia', cursive;
         font-weight: 300;
         font-size: 2.6rem;
         letter-spacing: 1px;
+
+        @media only screen and (max-width: 622px){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 724px){
+            padding: 1rem 3rem;
+        }
+
+        @media only screen and (max-width: 432px){
+            font-size: 1.7rem;
+        }
+
+        @media only screen and (max-width: 394px){
+            margin-right: 0;
+            font-size: 1.9rem;
+        }
     }
 
     &__list {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 394px){
+            justify-content: space-between;
+        }
     }
 
     &__links {
         display: flex;
         align-items: center;
         list-style-type: none;
+
+        @media only screen and (max-width: 394px){
+            justify-content: space-between;
+        }
     }
 
     &__link {
@@ -40,11 +81,23 @@
             font-size: 1.9rem;
             color: $color-white;
             text-decoration: none;
+
+            @media only screen and (max-width: 622px){
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: 394px){
+                font-size: 1.8rem;
+            }
         }
 
         &:hover {
             text-decoration: underline;
             transform: translateY(-3px);
+        }
+
+        @media only screen and (max-width: 394px){
+            margin-right: 4rem;
         }
     }
 
@@ -66,6 +119,11 @@
         transition: all .2s;
         font-size: 1.6rem;
         text-decoration: none;
+
+        @media only screen and (max-width: 622px){
+            font-size: 1.4rem;
+            padding: .3rem 2.3rem;
+        }
 
 
         &:hover {

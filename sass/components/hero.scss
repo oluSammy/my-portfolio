@@ -14,6 +14,16 @@
     &__figure {
         height: 20rem;
         width: 20rem;
+
+        @media only screen and (max-width: 622px){
+          height: 15rem;
+          width: 15rem;
+      }
+
+      @media only screen and (max-width: 450px){
+          height: 10rem;
+          width: 10rem;
+      }
     }
 
     &__img {
@@ -30,13 +40,29 @@
         font-size: 3rem;
         animation: slideUp 4s cubic-bezier(0.42, 0, 1, 1);
         margin-top: 4rem;
+
+        @media only screen and (max-width: 622px){
+          font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 450px){
+        font-size: 1.7rem;
+    }
     }
 
     &__socials {
         margin-top: 4rem;
         display: flex;
         align-items: center;
-        // animation: scaleSocials 6.3s cubic-bezier(0,1.08,.91,.57);
+        animation: scaleSocials 6.3s cubic-bezier(0,1.08,.91,.57);
+
+        @media only screen and (max-width: 622px){
+          margin-left: 2rem;
+        }
+
+        @media only screen and (max-width: 450px){
+          margin-left: 1.6rem;
+      }
 
         & a {
           display: block;
@@ -50,6 +76,11 @@
           color: $color-white;
           font-size: 1.1rem;
           margin-left: -.5rem;
+
+          @media only screen and (max-width: 622px){
+            font-size: 1rem;
+            margin-left: -.3rem;
+        }
 
           &:hover {
             text-decoration: underline;
@@ -65,17 +96,18 @@
         transition: all .4s;
         // padding: .9rem;
         margin-right: 5rem;
-        // background-color: black;
-        // padding: 1rem;
 
-        &:not(:last-child) {
-        }
+        @media only screen and (max-width: 622px){
+          width: 1.4rem;
+          height: 1.4rem;
+          margin-right: 4rem;
+      }
+
 
         &:hover {
           background-color: $color-black;
           transform: scale(1.2);
         }
-          // border-radius: 50%;
     }
 
     &__scroll {
@@ -90,11 +122,24 @@
             fill: $color-white;
             height: 2rem;
             width: 2rem;
+
+            @media only screen and (max-width: 622px){
+              height: 1.5rem;
+              width: 1.5rem;
+          }
         }
 
         &--text {
             color: $color-white;
             font-size: 1.5rem;
+
+            @media only screen and (max-width: 622px){
+              font-size: 1.3rem;
+          }
+
+          @media only screen and (max-width: 450px){
+            font-size: 1rem;
+          }
         }
 
     }

@@ -27,11 +27,22 @@
             font-weight: 700;
         }
 
+        @media only screen and (max-width: 500px){
+            width: 85%;
+        }
+
+        @media only screen and (max-width: 430px){
+            width: 95%;
+        }
     }
 
     &__text {
         font-size: 1.9rem;
         color: $text-color-light;
+
+        @media only screen and (max-width: 728px){
+            text-align: justify;
+        }
     }
 
     &__btn {
@@ -54,5 +65,9 @@
 
     &__btn-container {
         margin-left: 55%;
+
+        @media only screen and (max-width: 728px){
+            margin-top: 3rem;
+        }
     }
 }
