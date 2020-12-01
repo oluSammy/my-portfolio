@@ -1082,7 +1082,7 @@ body {
 
 .footer {
   min-height: 65vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.61), #0c0a0cb7), url(../../assets/images/banner-8.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.61), #0c0a0cb7), url(../assets/images/banner-8.jpg);
   background-size: cover;
   background-position: center;
   padding: 4rem;
@@ -1192,8 +1192,8 @@ body {
 }
 
 .banner {
-  min-height: 99vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.548), #141314cb), url(../../assets/images/banner-8.jpg);
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.548), #141314cb), url(../assets/images/banner-8.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1815,8 +1815,18 @@ body {
 .card:hover .card__side--front {
   transform: rotateY(180deg);
 }
+@media only screen and (max-width: 768px) {
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+}
 .card:hover .card__side--back {
   transform: rotateY(0);
+}
+@media only screen and (max-width: 768px) {
+  .card:hover .card__side--back {
+    transform: rotateY(-180deg);
+  }
 }
 .card__top {
   height: 35%;
