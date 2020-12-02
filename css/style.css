@@ -694,6 +694,10 @@ body {
     font-size: 1.9rem;
   }
 }
+.nav__title-span {
+  color: orangered;
+  font-size: 2rem;
+}
 .nav__list {
   display: flex;
   align-items: center;

@@ -53,6 +53,11 @@
         }
     }
 
+    &__title-span {
+        color: orangered;
+        font-size: 2rem;
+    }
+
     &__list {
         display: flex;
         align-items: center;
