@@ -19,8 +19,8 @@ window.addEventListener('scroll', () => {
 
 ScrollReveal().reveal('.about__content', {
   reset: true,
-  distance: '150%',
-  origin: 'bottom',
+  distance: '20%',
+  origin: 'left',
   opacity: null,
 });
 

@@ -17,6 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+	<!-- <script>
+		ScrollReveal({ duration: 1000 })
+	</script> -->
+
+
     <title>Olumorin Samuel</title>
 </head>
 <body class="body">
@@ -127,14 +134,14 @@
 
         <!-- Dev-Tools Section -->
         <section class="dev" id="dev">
-            <div class="dev__heading">
+            <div class="dev__heading dev-animation">
                 <h2 class="dev__title section-heading">Languages / Libraries / Dev Tools</h2>
                 <svg class="dev__icon">
                     <use xlink:href="./assets/icons/icons.svg#icon-brightness-down"></use>
                 </svg>
             </div>
-            <h6 class="dev__subtitle">Tools I use to accelerate development and workflow</h6>
-            <div class="dev__container">
+            <h6 class="dev__subtitle dev-animation">Tools I use to accelerate development and workflow</h6>
+            <div class="dev__container animate-dev">
                 <div class="dev__icon-box">
                     <figure class="dev__figure">
                         <img src="./assets/images/icons/node-js-logo.png" alt="" class="dev__tool-icon">
@@ -298,7 +305,7 @@
                 </svg>
             </div>
             <div class="card-box">
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -373,7 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -448,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -530,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -612,7 +619,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -687,7 +694,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -754,7 +761,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -821,7 +828,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -888,7 +895,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card animate-card">
                     <div class="card__side card__side--front">
                         <div class="card__top">
                             <figure class="card__img card__img--desktop">
@@ -1052,4 +1059,9 @@
     </footer>
     <script src="./js/app.js"></script>
 </body>
+<script>
+    // ScrollReveal().reveal('.footer')
+    // ScrollReveal().reveal('.tagline', { delay: 500 })
+    
+</script>
 </html>
