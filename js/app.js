@@ -24,18 +24,16 @@ ScrollReveal().reveal('.about__content', {
   opacity: null,
 });
 
-//
-
-ScrollReveal().reveal('.about__btn-container', {
-  delay: 675,
+ScrollReveal().reveal('.btn-animation', {
+  delay: 475,
   reset: true,
   distance: '10%',
-  origin: 'right',
+  origin: 'bottom',
   opacity: 0,
 });
 
 ScrollReveal().reveal('.dev-animation', {
-  delay: 275,
+  delay: 395,
   reset: true,
   distance: '10%',
   origin: 'bottom',
